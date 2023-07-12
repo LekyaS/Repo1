@@ -7,7 +7,7 @@ jobs:
         name: Rational Functional Tester - UI Test
         runs-on: self-hosted
         steps:
-         - name: Rational Functional Tester - UI Test
+         - name: Rational Functional Tester Execute - UI Test
            uses: LekyaS/onetest-web-action-main-forTesting@main
            with:
             workspace: /Users/ap-rpt-mac06/IBM/rationalsdp/1053GA_Workspace          
