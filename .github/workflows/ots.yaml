@@ -12,4 +12,4 @@ jobs:
            with:
             workspace: /Users/ap-rpt-mac06/IBM/rationalsdp/1053GA_Workspace          
             project:  1053_PT_Proj            
-            suite: Tests/PT_WebUItest1.testsuite
+            suite: Tests/HttpPTTest1.testsuite
