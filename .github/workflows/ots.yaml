@@ -8,8 +8,8 @@ jobs:
         runs-on: self-hosted
         steps:
          - name: Rational Functional Tester Execute - UI Test
-           uses: LekyaS/onetest-web-action-main-forTesting@main
+           uses: LekyaS/perf-for-testing@main
            with:
             workspace: /Users/ap-rpt-mac06/IBM/rationalsdp/1053GA_Workspace          
-            project:  1053_WebUIMac            
-            suite: Tests/WebUI_Script1.testsuite
+            project:  1053_PT_Proj            
+            suite: Tests/PT_WebUItest1.testsuite
