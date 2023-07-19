@@ -1,13 +1,13 @@
-name: Rational Functional Tester - UI Test
+name: Rational Performance Tester
 
 on: workflow_dispatch
 
 jobs:
-    WebUI-Action:
-        name: Rational Functional Tester - UI Test
+    Performance-Action:
+        name: Rational Performance Tester
         runs-on: self-hosted
         steps:
-         - name: Rational Functional Tester Execute - UI Test
+         - name: Rational Performance Tester
            uses: LekyaS/perf-for-testing@main
            with:
             workspace: /Users/ap-rpt-mac06/IBM/rationalsdp/1053GA_Workspace          
