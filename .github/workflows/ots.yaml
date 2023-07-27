@@ -1,15 +1,15 @@
-name: Rational Performance Tester
+name: Rational Functional Tester - UI Test
 
 on: workflow_dispatch
 
 jobs:
     Performance-Action:
-        name: Rational Performance Tester
+        name: Rational Functional Tester - UI Test
         runs-on: self-hosted
         steps:
-         - name: Rational Performance Tester
-           uses: IBM/devopsauto-perftest-actions@main
+         - name: Rational Functional Tester - UI Test
+           uses: IBM/devopsauto-uitest-actions@main
            with:
             workspace: /Users/ap-rpt-mac06/IBM/rationalsdp/1053GA_Workspace          
-            project:  1053_PT_Proj            
-            suite: Tests/HttpPTTest1.testsuite
+            project:  1053_WebUIMac            
+            suite: Tests/WebUI_Script1.testsuite
