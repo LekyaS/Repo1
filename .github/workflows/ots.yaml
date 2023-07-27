@@ -4,11 +4,11 @@ on: workflow_dispatch
 
 jobs:
     Performance-Action:
-        name: Rational Performance Tester
+        name: HCL OneTest Performance
         runs-on: self-hosted
         steps:
-         - name: Rational Performance Tester
-           uses: IBM/devopsauto-perftest-actions@main
+         - name: HCL OneTest Performance
+           uses: HCL-TECH-SOFTWARE/onetest-perf-action@main
            with:
             workspace: /Users/ap-rpt-mac06/IBM/rationalsdp/1053GA_Workspace          
             project:  1053_PT_Proj            
