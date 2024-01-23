@@ -4,12 +4,12 @@ on: workflow_dispatch
 
 jobs:
     Performance-Action:
-        name: Rational Functional Tester - UI Test
+        name: TestHCL OneTest WebUI GitHub Action
         runs-on: self-hosted
         steps:
-         - name: Rational Functional Tester - UI Test
-           uses: IBM/devopsauto-uitest-actions@main
+         - name: TestHCL OneTest WebUI GitHub Action
+           uses: LekyaS/Owner-avatar-onetest-ui-action-main-fortesting--Rename@Test
            with:
-            workspace: /Users/ap-rpt-mac06/IBM/rationalsdp/1053GA_Workspace          
-            project:  1053_WebUIMac            
-            suite: Tests/WebUI_Script1.testsuite
+            workspace: C:\Users\preethi.as\HCL\devopstest\workspace          
+            project:  webui            
+            suite: test1.testsuite
