@@ -7,8 +7,9 @@ jobs:
         name: TestHCL OneTest WebUI GitHub Action
         runs-on: self-hosted
         steps:
-         - name: HCL OneTest UI GitHub Action
-           uses: HCL-TECH-SOFTWARE/onetest-ui-action@v1
+         - name: HCL OneTest WebUI GitHub Action
+           uses: HCL-TECH-SOFTWARE/onetest-web-action@v1
            with:
-            projectDirectory:  C:\Users\preethi.as\HCL\devopstest\workspace\Project1    
-            scriptName: Script1
+            workspace: C:\Users\preethi.as\HCL\devopstest\workspace
+            project: webui
+            suite: test1
