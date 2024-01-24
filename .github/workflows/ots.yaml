@@ -4,12 +4,12 @@ on: workflow_dispatch
 
 jobs:
     Performance-Action:
-        name: TestHCL OneTest WebUI GitHub Action
+        name: HCL OneTest Performance GitHub Action
         runs-on: self-hosted
         steps:
-         - name: HCL OneTest WebUI GitHub Action
-           uses: HCL-TECH-SOFTWARE/onetest-web-action@v1
+         - name: HCL OneTest Performance GitHub Action
+           uses: HCL-TECH-SOFTWARE/onetest-perf-action@v1
            with:
             workspace: C:\Users\preethi.as\HCL\devopstest\workspace
-            project: webui
-            suite: test1
+            project: perfproject
+            suite: perftest
