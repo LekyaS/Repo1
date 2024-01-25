@@ -10,6 +10,6 @@ jobs:
          - name: HCL OneTest WebUI GitHub Action
            uses: HCL-TECH-SOFTWARE/onetest-web-action@v1
            with:
-            workspace: C:\Users\preethi.as\IBM\devopstest\workspace
+            workspace: C:\Users\preethi.as\IBM\devopstest\workspace\
             project: Project4
             suite: test4.testsuite
