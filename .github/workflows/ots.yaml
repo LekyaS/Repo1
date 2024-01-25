@@ -1,15 +1,14 @@
-name: HCL OneTest Performance
+name: HCL OneTest UI
 
 on: workflow_dispatch
 
 jobs:
-    Performance-Action:
-        name: HCL OneTest Performance
+    UI-Action:
         runs-on: self-hosted
+        name: HCL OneTest UI
         steps:
-         - name: HCL OneTest Performance
-           uses: HCL-TECH-SOFTWARE/onetest-perf-action@main
+         - name: HCL OneTest UI GitHub Action
+           uses: HCL-TECH-SOFTWARE/onetest-ui-action@v1
            with:
-            workspace: D:\Workspace-2024
-            project: PerfTest
-            suite: perftest
+            projectDirectory:  D:\Workspace-2024\Project1
+            scriptName: Script2.java
