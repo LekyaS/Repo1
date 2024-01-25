@@ -7,9 +7,9 @@ jobs:
         name: HCL OneTest Performance
         runs-on: self-hosted
         steps:
-         - name: HCL OneTest Performance GitHub Action
-           uses: HCL-TECH-SOFTWARE/onetest-perf-action@v1
+         - name: HCL OneTest WebUI GitHub Action
+           uses: HCL-TECH-SOFTWARE/onetest-web-action@v1
            with:
-            workspace: C:\Users\preethi.as\HCL\devopstest\workspace
-            project: perfproject
-            suite: perftest.testsuite
+            workspace: C:\Users\preethi.as\IBM\devopstest\workspace
+            project: Project4
+            suite: test4.testsuite
