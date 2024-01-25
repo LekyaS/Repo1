@@ -7,9 +7,12 @@ jobs:
         name: HCL OneTest Performance GitHub Action
         runs-on: self-hosted
         steps:
-         - name: HCL OneTest Performance GitHub Action
-           uses: HCL-TECH-SOFTWARE/onetest-perf-action@v1
+         - name: HCL OneTest Server GitHub Action
+           uses: HCL-TECH-SOFTWARE/onetest-server-action@v1
            with:
-            workspace: C:\Users\preethi.as\HCL\devopstest\workspace
-            project: perfproject
-            suite: perftest
+            serverUrl: https://master-hcl.tp-k8s.nonprod.hclpnp.com/
+            offlineToken: eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI2NDVhMmFmOS1jOWNhLTQ1ZTktOTM3Ny01OTcyMGMyZGVmNTUifQ.eyJpYXQiOjE3MDYxNjMzMzIsImp0aSI6IjhiZDJkZDVkLTUyYWUtNDhkZi05MjIwLTZhZDFmYWNiM2U4NCIsImlzcyI6Imh0dHBzOi8vbWFzdGVyLWhjbC50cC1rOHMubm9ucHJvZC5oY2xwbnAuY29tL2F1dGgvcmVhbG1zL3Rlc3RzZXJ2ZXIiLCJhdWQiOiJodHRwczovL21hc3Rlci1oY2wudHAtazhzLm5vbnByb2QuaGNscG5wLmNvbS9hdXRoL3JlYWxtcy90ZXN0c2VydmVyIiwic3ViIjoiNjVmOTdlNWMtODYxMy00NzAxLWEzMWQtZGY4ZjMyOTk1ZTFiIiwidHlwIjoiT2ZmbGluZSIsImF6cCI6InRlc3RzZXJ2ZXIiLCJzZXNzaW9uX3N0YXRlIjoiYTdiMzBjMDItMGM5Zi00MGEyLTk1NDctY2Q5Y2FjOTgzZTM0Iiwic2NvcGUiOiJvZmZsaW5lX2FjY2VzcyBwcm9maWxlIGVtYWlsIiwic2lkIjoiYTdiMzBjMDItMGM5Zi00MGEyLTk1NDctY2Q5Y2FjOTgzZTM0In0.Z-V73yiTnlO4QhUfSY-j5J3oGh3cl0d05K35nUDtP3I
+            teamspace: Initial Team Space
+            project: ProjectTest
+            branch: master
+            assetId: 6f53d796-9e65-4d2a-93d7-969e655d2af0
