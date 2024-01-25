@@ -1,14 +1,18 @@
-name: HCL OneTest UI
+name: HCL OneTest Server
 
 on: workflow_dispatch
 
 jobs:
-    UI-Action:
+    OTS-Action:
         runs-on: self-hosted
-        name: HCL OneTest UI
+        name: HCL OneTest Server
         steps:
          - name: Execute Test
-           uses: HCL-TECH-SOFTWARE/onetest-ui-action@v1
+           uses: HCL-TECH-SOFTWARE/onetest-server-action@main
            with:
-            projectDirectory:  C:\Users\preethi.as\IBM\devopstest\workspace\Project1
-            scriptName: Script2
+            serverUrl: https://master-hcl.tp-k8s.nonprod.hclpnp.com
+            offlineToken: eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI2NDVhMmFmOS1jOWNhLTQ1ZTktOTM3Ny01OTcyMGMyZGVmNTUifQ.eyJpYXQiOjE3MDYxODI0NTgsImp0aSI6IjBkMzc1Mzk5LWVlY2QtNDVkNS1hZWZkLTYwNmFmOTExOWQ3MCIsImlzcyI6Imh0dHBzOi8vbWFzdGVyLWhjbC50cC1rOHMubm9ucHJvZC5oY2xwbnAuY29tL2F1dGgvcmVhbG1zL3Rlc3RzZXJ2ZXIiLCJhdWQiOiJodHRwczovL21hc3Rlci1oY2wudHAtazhzLm5vbnByb2QuaGNscG5wLmNvbS9hdXRoL3JlYWxtcy90ZXN0c2VydmVyIiwic3ViIjoiNjVmOTdlNWMtODYxMy00NzAxLWEzMWQtZGY4ZjMyOTk1ZTFiIiwidHlwIjoiT2ZmbGluZSIsImF6cCI6InRlc3RzZXJ2ZXIiLCJzZXNzaW9uX3N0YXRlIjoiNjBmYTNiMjItOTkyMS00NGNjLTk1ZGQtZDlkY2M5YzM0YTRiIiwic2NvcGUiOiJvZmZsaW5lX2FjY2VzcyBwcm9maWxlIGVtYWlsIiwic2lkIjoiNjBmYTNiMjItOTkyMS00NGNjLTk1ZGQtZDlkY2M5YzM0YTRiIn0.FY8YnAbvQM3oUtFuY-HXEasSGP0FjI1_E27K0VIXATA
+            teamspace: Initial Team Space
+            project: ProjectTest
+            branch: master
+            assetId: 6f53d796-9e65-4d2a-93d7-969e655d2af0
