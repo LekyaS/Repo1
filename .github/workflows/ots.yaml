@@ -1,15 +1,14 @@
-name: HCL OneTest WEBUI
+name: HCL OneTest UI
 
 on: workflow_dispatch
 
 jobs:
-    WebUI-Action:
-        name: HCL OneTest WEBUI
+    UI-Action:
         runs-on: self-hosted
+        name: HCL OneTest UI
         steps:
-         - name: HCL OneTest WEBUI
-           uses: HCL-TECH-SOFTWARE/onetest-web-action@main
+         - name: Execute Test
+           uses: HCL-TECH-SOFTWARE/onetest-ui-action@v1
            with:
-            workspace:  D:\Workspace-2024\
-            project: projectwebui
-            suite: webui
+            projectDirectory:  D:\Workspace-2024\Project1
+            scriptName: Script2
