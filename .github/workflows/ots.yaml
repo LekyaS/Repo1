@@ -12,4 +12,4 @@ jobs:
            with:
             workspace: C:\Users\LocalUser\Workspace
             project: perfproject
-            suite: perftest.testsuite
+            suite: perftest
