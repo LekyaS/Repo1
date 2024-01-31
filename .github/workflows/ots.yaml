@@ -10,5 +10,5 @@ jobs:
          - name: Execute Test
            uses: LekyaS/-devops-test-ui-action@Test
            with:
-            projectDirectory:  C:\Users\preethi.as\IBM\devopstest\workspace\Project1
+            projectDirectory:  D:\Workspace-2024\Project1
             scriptName: Script2
