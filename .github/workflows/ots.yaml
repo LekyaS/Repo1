@@ -5,9 +5,9 @@ on: workflow_dispatch
 jobs:
     UI-Action:
         runs-on: self-hosted
-        name: HCL DevOps Test UI
+        name: HCL DevOps Test UI GitHub Action
         steps:
-         - name: Execute Test
+         - name: HCL DevOps Test UI GitHub Action
            uses: LekyaS/-devops-test-ui-action@Test
            with:
             projectDirectory:  D:\Workspace-2024\Project1
